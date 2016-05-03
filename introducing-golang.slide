@@ -1,0 +1,190 @@
+Introducing Go
+
+Aurélien Baumann
+Golang and Javascript developper
+Capgemini
+@kendo5731
+http://www.aubm.net
+
+* Credits
+
+This presentation is largely inspired/copied from the one by Sameer Ajmani:
+
+.link https://talks.golang.org/2015/go-for-java-programmers.slide
+
+Watch it here:
+
+.link https://www.youtube.com/watch?v=_c_tQ6_3cCg
+
+* What is Go?
+
+"Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+
+.link https://golang.org
+
+.image ./introducing-golang/gopher.png 400 _
+
+* History
+
+Design began in late 2007 at Google.
+
+- Robert Griesemer, Rob Pike, and Ken Thompson.
+- Ian Lance Taylor and Russ Cox.
+
+Open source since 2009 with a very active community.
+
+Language stable as of Go 1, early 2012.
+
+Go 1.6 released in 2016.
+
+.image ./introducing-golang/google.jpg 200 _
+
+* Why Go?
+
+Go is an answer to problems of scale at Google.
+
+.image ./introducing-golang/datacenter.jpg 500 _
+
+* System Scale
+
+- designed to scale to 10⁶⁺ machines
+- everyday jobs run on 1000s of machines
+- jobs coordinate, interact with others in the system
+- lots going on at once
+
+Solution: great support for concurrency
+
+.image ./introducing-golang/gophercomplex6.jpg
+
+* A Second Problem: Engineering Scale
+
+In 2011:
+
+- 5000+ developers across 40+ offices
+- 20+ changes per minute
+- 50% of code base changes every month
+- 50 million test cases executed per day
+- single code tree
+
+Solution: design the language for large code bases
+
+.image ./introducing-golang/gopher-ski.png 220 _
+
+* Who uses Go besides Google?
+
+.link http://golang.org/wiki/GoUsers
+
+Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker, Dropbox, Facebook, Getty Images, GitHub, Heroku, Iron.io, Kubernetes, Mandrill, Medium, MongoDB services, Mozilla services, New York Times, OVH, pool.ntp.org, Secret, SmugMug, SoundCloud, Stripe, Square, Thomson Reuters, Tumblr, ...
+
+.image ./introducing-golang/gopher-bus.jpg 300 _
+
+* Go and Java have much in common
+
+- C family (imperative, braces)
+- Statically typed
+- Garbage collected
+- Memory safe (nil references, runtime bounds checks)
+- Variables are always initialized (zero/nil/false)
+- Methods
+- Interfaces
+- Type assertions (`instanceof`)
+- Reflection
+
+* What Go has not
+
+- Classes
+- Constructors
+- Inheritance
+- Exceptions
+- Annotations
+- User-defined generics
+
+.image ./introducing-golang/gopher-looking-up.png 400 _
+
+* Very optinionnated
+
+.link https://golang.org/doc/faq Golang FAQ
+
+.link http://commandcenter.blogspot.fr/2012/06/less-is-exponentially-more.html Less is exponentially more (Rob Pike, 2012)
+
+.link https://talks.golang.org/2012/splash.article Go at Google: Language Design in the Service of Software Engineering (Rob Pike, 2012)
+
+.link http://bravenewgeek.com/go-is-unapologetically-flawed-heres-why-we-use-it/ Go is unapologetically flawed
+
+.image ./introducing-golang/generics-troll.jpg 300 _
+
+* Why does Go leave out those features?
+
+Clarity is critical.
+
+When reading code, it should be clear what the program will do.
+
+When writing code, it should be clear how to make the program do what you want.
+
+Sometimes this means writing out a loop instead of invoking an obscure function.
+
+.image ./introducing-golang/gopher-cowboy.png 300 _
+
+* What Go has
+
+- A compiler to machine code. There's no VM
+- Statically linked binaries
+- Built-in concurrency
+- Implicit interface satisfaction
+- Named parameters
+- A really nice standard library
+- A bunch of tools: go, gofmt, govet, gotest, goimports, godoc, ...
+- IDE and editor support
+- An enthusiastic community
+
+* Play with Go
+
+.link https://play.golang.org/
+
+.image ./introducing-golang/gopher-coffee.jpg 470 _
+
+* Let's build something!
+
+.image ./introducing-golang/gopher-hello.jpg
+
+* Where to Go next
+
+Take the Go Tour online.
+
+.link http://tour.golang.org
+
+Effective Go
+
+.link https://golang.org/doc/effective_go.html
+
+Lots more material.
+
+.link http://golang.org/wiki/Learn
+
+Great community.
+
+.link http://golang.org/project
+
+* Books
+
+.link http://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440 The Go Programming Language - by Alan A. A. Donovan
+
+.link https://www.gitbook.com/book/astaxie/build-web-application-with-golang/details/en Build web application with Golang - Astaxie
+
+.link https://github.com/golang/go/wiki/Books And others ...
+
+.image ./introducing-golang/gopher-bike.png
+
+* Talks
+
+.link https://www.youtube.com/watch?v=fsTOOPB1TBY Andrew Gerrand - 5 things I love about Go (dotGo 2014)
+
+.link https://www.youtube.com/watch?v=rFejpH_tAHM Rob Pike - Simplicity is complicated (dotGo 2015)
+
+.link https://www.youtube.com/watch?v=29LLRKIL_TI Steve Francia - 7 common mistakes in Go and when to avoid them (Gopherfest 2015)
+
+.link https://www.youtube.com/watch?v=tIm8UkSf6RA Mat Ryer - Building APIs (Golang UK 2015)
+
+.link https://www.youtube.com/watch?v=Vd4DE6D6o94 Peter Bourgon - A case for microservices (dotGo 2015)
+
+.image ./introducing-golang/gopher-plane.jpg 300 _
