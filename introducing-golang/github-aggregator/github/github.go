@@ -9,11 +9,17 @@ import (
 	"os/exec"
 )
 
+type Config struct {
+	Dir string
+}
+
 type Repository struct {
 	URL string `json:"ssh_url"`
 }
 
-type RepositoriesManager struct{}
+type RepositoriesManager struct {
+	Config
+}
 
 func (r RepositoriesManager) List(user string) ([]Repository, error) {
 	resp, err := http.Get(fmt.Sprintf("https://api.github.com/users/%v/repos", user))
@@ -27,9 +33,8 @@ func (r RepositoriesManager) List(user string) ([]Repository, error) {
 }
 
 func (r RepositoriesManager) Clone(repo Repository) error {
-	dir := "D:\\Users\\aubauman\\Desktop"
 	cmd := exec.Command("git", "clone", repo.URL)
-	cmd.Dir = dir
+	cmd.Dir = r.Dir
 	if err := cmd.Run(); err != nil {
 		return err
 	}
