@@ -81,23 +81,23 @@ Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker,
 * Go and Java have much in common
 
 - C family (imperative, braces)
-- Statically typed
-- Garbage collected
-- Memory safe (nil references, runtime bounds checks)
-- Variables are always initialized (zero/nil/false)
-- Methods
-- Interfaces
-- Type assertions (`instanceof`)
-- Reflection
+- statically typed
+- garbage collected
+- memory safe (nil references, runtime bounds checks)
+- variables are always initialized (zero/nil/false)
+- methods
+- interfaces
+- type assertions (`instanceof`)
+- reflection
 
 * What Go has not
 
-- Classes
-- Constructors
-- Inheritance
-- Exceptions
-- Annotations
-- User-defined generics
+- classes
+- constructors
+- inheritance
+- exceptions
+- annotations
+- user-defined generics
 
 .image ./introducing-golang/gopher-looking-up.png 400 _
 
@@ -127,15 +127,15 @@ Sometimes this means writing out a loop instead of invoking an obscure function.
 
 * What Go has
 
-- A compiler to machine code. There's no VM
-- Statically linked binaries
-- Built-in concurrency
-- Implicit interface satisfaction
-- Named parameters
-- A really nice standard library
-- A bunch of tools: go, gofmt, govet, gotest, goimports, godoc, ...
+- a compiler to machine code. There's no VM
+- statically linked binaries
+- built-in concurrency
+- implicit interface satisfaction
+- named parameters
+- a really nice standard library
+- a bunch of tools: go, gofmt, govet, gotest, goimports, godoc, ...
 - IDE and editor support
-- An enthusiastic community
+- an enthusiastic community
 
 * Play with Go
 
@@ -146,6 +146,38 @@ Sometimes this means writing out a loop instead of invoking an obscure function.
 * Let's build something!
 
 .image ./introducing-golang/gopher-hello.jpg
+
+* The main func
+
+.code ./snippets/01-main.go
+
+* Our first HTTP handler func
+
+.code ./snippets/02-first-http-handler.go
+
+Any function that implements this API can be used as an handler for a HTTP request.
+
+Let's build and run it using the go command
+
+.code ./snippets/03-go-run.sh
+
+* And here it runs
+
+.image ./introducing-golang/hello-go.jpg
+
+A production ready HTTP server.
+
+For n incoming requests, Go executes the handler in n independent goroutines that run concurrently.
+
+We will talk more about concurrency.
+
+* Build and deploy
+
+go build
+
+That is all there is!
+
+.link https://github.com/mitchellh/gox
 
 * Where to Go next
 
@@ -185,6 +217,8 @@ Great community.
 
 .link https://www.youtube.com/watch?v=tIm8UkSf6RA Mat Ryer - Building APIs (Golang UK 2015)
 
+.link https://www.youtube.com/watch?v=uFXfTXSSt4I Gabe Rosenhouse - TDD, Mocking & Dependency Injection (LA Golang 2016)
+
 .link https://www.youtube.com/watch?v=Vd4DE6D6o94 Peter Bourgon - A case for microservices (dotGo 2015)
 
-.image ./introducing-golang/gopher-plane.jpg 300 _
+.image ./introducing-golang/gopher-plane.jpg 250 _
