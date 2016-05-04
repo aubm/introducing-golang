@@ -1,11 +1,11 @@
 package github
 
 import (
-	"net/http"
-	"fmt"
-	"errors"
-	"io/ioutil"
 	"encoding/json"
+	"errors"
+	"fmt"
+	"io/ioutil"
+	"net/http"
 	"os/exec"
 )
 
@@ -13,7 +13,7 @@ type Repository struct {
 	URL string `json:"ssh_url"`
 }
 
-type RepositoriesManager struct {}
+type RepositoriesManager struct{}
 
 func (r RepositoriesManager) List(user string) ([]Repository, error) {
 	resp, err := http.Get(fmt.Sprintf("https://api.github.com/users/%v/repos", user))

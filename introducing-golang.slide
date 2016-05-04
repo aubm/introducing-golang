@@ -149,17 +149,17 @@ Sometimes this means writing out a loop instead of invoking an obscure function.
 
 * The main func
 
-.code ./snippets/01-main.go
+.code ./introducing-golang/code/01-main.go
 
 * Our first HTTP handler func
 
-.code ./snippets/02-first-http-handler.go
+.code ./introducing-golang/code/02-first-http-handler.go
 
 Any function that implements this API can be used as an handler for a HTTP request.
 
 Let's build and run it using the go command
 
-.code ./snippets/03-go-run.sh
+.code ./introducing-golang/code/03-go-run.sh
 
 * And here it runs
 

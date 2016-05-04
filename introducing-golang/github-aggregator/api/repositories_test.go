@@ -1,23 +1,23 @@
 package api
 
 import (
-	"net/http/httptest"
 	"net/http"
+	"net/http/httptest"
 	"sync/atomic"
 	"testing"
 
+	"github.com/aubm/present-talks/introducing-golang/github-aggregator/github"
 	"github.com/gorilla/mux"
-	"github.com/aubm/introducing-golang/github-aggregator/github"
 )
 
 type mockListCloner struct {
-	LastListArg string
+	LastListArg  string
 	NbCloneCalls int32
 }
 
 func (lc *mockListCloner) List(user string) ([]github.Repository, error) {
 	lc.LastListArg = user
-	return []github.Repository{ {URL: "foo"}, {URL: "bar"} }, nil
+	return []github.Repository{{URL: "foo"}, {URL: "bar"}}, nil
 }
 
 func (lc *mockListCloner) Clone(github.Repository) error {

@@ -1,11 +1,11 @@
 package api
 
 import (
-	"net/http"
 	"log"
+	"net/http"
 
+	"github.com/aubm/present-talks/introducing-golang/github-aggregator/github"
 	"github.com/gorilla/mux"
-	"github.com/aubm/introducing-golang/github-aggregator/github"
 )
 
 type listCloner interface {
@@ -24,7 +24,7 @@ func (h RepositoriesHandler) CloneUserRepositories(w http.ResponseWriter, r *htt
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
-	clonesDone := make(chan(bool), len(repos))
+	clonesDone := make(chan (bool), len(repos))
 	for _, repo := range repos {
 		go func(repo github.Repository) {
 			if err := h.ListCloner.Clone(repo); err == nil {
@@ -36,7 +36,7 @@ func (h RepositoriesHandler) CloneUserRepositories(w http.ResponseWriter, r *htt
 		}(repo)
 	}
 	for range repos {
-		<- clonesDone
+		<-clonesDone
 	}
 	log.Println("all clones done")
 

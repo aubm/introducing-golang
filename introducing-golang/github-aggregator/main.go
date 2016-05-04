@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"log"
+	"net/http"
 
-	"github.com/aubm/introducing-golang/github-aggregator/api"
-	"github.com/aubm/introducing-golang/github-aggregator/github"
+	"github.com/aubm/present-talks/introducing-golang/github-aggregator/api"
+	"github.com/aubm/present-talks/introducing-golang/github-aggregator/github"
 	"github.com/gorilla/mux"
 )
 
