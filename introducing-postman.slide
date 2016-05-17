@@ -1,0 +1,53 @@
+Introducing Postman
+
+Aurélien Baumann
+Golang and Javascript developper
+Capgemini
+@kendo5731
+http://www.aubm.net
+
+* The need for Postman
+
+* Community
+
+Not fully an open source project but the the community is very implicated
+
+.link https://github.com/postmanlabs
+.link https://twitter.com/postmanclient
+.link https://www.getpostman.com/slack-invite
+.link http://blog.getpostman.com/
+
+* Play with Postman
+
+* Requests
+
+* Collections
+
+* Environnements
+
+* Collaborate with Postman Cloud
+
+.image ./introducing-postman/postman-cloud.jpg 350 _
+
+- Team collections
+- Real-time notifications
+- Automatic documentation
+
+* Automate your tests
+
+* Write our first test
+
+* Integrated libraries
+
+* Data files
+
+* Custom workflows
+
+* Postman loves your CI
+
+* Want to generate a beautiful documentation for your API?
+
+* Resources
+
+.link https://www.getpostman.com/integrations/ Cool integrations
+.link https://www.getpostman.com/community Community projects
