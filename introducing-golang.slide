@@ -90,6 +90,18 @@ Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker,
 - type assertions (`instanceof`)
 - reflection
 
+* What Go has
+
+- a compiler to machine code. There's no VM
+- statically linked binaries
+- built-in concurrency
+- implicit interface satisfaction
+- named parameters
+- a really nice standard library
+- a bunch of tools: go, gofmt, govet, gotest, goimports, godoc, ...
+- IDE and editor support
+- an enthusiastic community
+
 * What Go has not
 
 - classes
@@ -100,18 +112,6 @@ Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker,
 - user-defined generics
 
 .image ./introducing-golang/gopher-looking-up.png 400 _
-
-* Very optinionnated
-
-.link https://golang.org/doc/faq Golang FAQ
-
-.link http://commandcenter.blogspot.fr/2012/06/less-is-exponentially-more.html Less is exponentially more (Rob Pike, 2012)
-
-.link https://talks.golang.org/2012/splash.article Go at Google: Language Design in the Service of Software Engineering (Rob Pike, 2012)
-
-.link http://bravenewgeek.com/go-is-unapologetically-flawed-heres-why-we-use-it/ Go is unapologetically flawed
-
-.image ./introducing-golang/generics-troll.jpg 300 _
 
 * Why does Go leave out those features?
 
@@ -125,17 +125,17 @@ Sometimes this means writing out a loop instead of invoking an obscure function.
 
 .image ./introducing-golang/gopher-cowboy.png 300 _
 
-* What Go has
+* Very optinionnated
 
-- a compiler to machine code. There's no VM
-- statically linked binaries
-- built-in concurrency
-- implicit interface satisfaction
-- named parameters
-- a really nice standard library
-- a bunch of tools: go, gofmt, govet, gotest, goimports, godoc, ...
-- IDE and editor support
-- an enthusiastic community
+.link https://golang.org/doc/faq Golang FAQ
+
+.link http://commandcenter.blogspot.fr/2012/06/less-is-exponentially-more.html Less is exponentially more (Rob Pike, 2012)
+
+.link https://talks.golang.org/2012/splash.article Go at Google: Language Design in the Service of Software Engineering (Rob Pike, 2012)
+
+.link http://bravenewgeek.com/go-is-unapologetically-flawed-heres-why-we-use-it/ Go is unapologetically flawed
+
+.image ./introducing-golang/generics-troll.jpg 300 _
 
 * Play with Go
 
