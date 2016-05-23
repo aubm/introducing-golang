@@ -8,6 +8,13 @@ http://www.aubm.net
 
 * The need for Postman
 
+Web browsers tools are good for web apps, when working on an HTTP API, you need something more specific.
+
+- Available as a Chrome extension
+- Also available as Mac and Windows (soon) apps
+
+.image ./introducing-postman/postman-logo.png 350 _
+
 * Community
 
 Not fully an open source project but the the community is very implicated
@@ -17,21 +24,39 @@ Not fully an open source project but the the community is very implicated
 .link https://www.getpostman.com/slack-invite
 .link http://blog.getpostman.com/
 
-* Play with Postman
+.image ./introducing-postman/community.png 250 _
 
 * Requests
 
+- Configure url, parameters, headers, etc...
+- Replay requests using the history
+- Authenticate and authorize with basic auth, oauth2, etc...
+
+.link https://www.getpostman.com/docs/requests
+
+.image ./introducing-postman/requests.png 300 _
+
 * Collections
+
+- Organize your requests using folders
+- Add documentation to your endpoints
+- Synchronize through all your devices
+
+.link https://www.getpostman.com/docs/collections
+
+.image ./introducing-postman/mac-app.jpg 300 _
 
 * Environnements
 
 * Collaborate with Postman Cloud
 
-.image ./introducing-postman/postman-cloud.jpg 350 _
-
 - Team collections
 - Real-time notifications
 - Automatic documentation
+
+.link https://www.getpostman.com/docs/cloud
+
+.image ./introducing-postman/postman-cloud.jpg 300 _
 
 * Automate your tests
 
@@ -45,9 +70,22 @@ Not fully an open source project but the the community is very implicated
 
 * Postman loves your CI
 
+- Newman allows to run your tests from the command line
+- Newman is open source
+
+.link https://github.com/postmanlabs/newman Checkout newman on Github
+
+.image ./introducing-postman/postman-loves-jenkins.png
+
+
 * Want to generate a beautiful documentation for your API?
+
+.link https://github.com/aubm/postmanerator Meet Postmanerator
+
+.image ./introducing-postman/terminator.jpg 400 _
 
 * Resources
 
 .link https://www.getpostman.com/integrations/ Cool integrations
 .link https://www.getpostman.com/community Community projects
+.link https://www.youtube.com/playlist?list=PLq8ibqx-o5fcYN-v5cNqz8C_045W2VFis Learning Postman (Youtube playlist)
