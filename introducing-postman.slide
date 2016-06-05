@@ -11,7 +11,7 @@ http://www.aubm.net
 Web browsers tools are good for web apps, when working on an HTTP API, you need something more specific.
 
 - Available as a Chrome extension
-- Also available as Mac and Windows (soon) apps
+- Also available as native apps on Mac and Windows (soon)
 
 .image ./introducing-postman/postman-logo.png 350 _
 
@@ -23,8 +23,9 @@ Not fully an open source project but the the community is very implicated
 .link https://twitter.com/postmanclient
 .link https://www.getpostman.com/slack-invite
 .link http://blog.getpostman.com/
+.link https://github.com/postmanlabs/postman-app-support
 
-.image ./introducing-postman/community.png 250 _
+.image ./introducing-postman/community.png 200 _
 
 * Requests
 
@@ -34,19 +35,27 @@ Not fully an open source project but the the community is very implicated
 
 .link https://www.getpostman.com/docs/requests
 
-.image ./introducing-postman/requests.png 300 _
+.image ./introducing-postman/requests.jpg 300 _
 
 * Collections
 
-- Organize your requests using folders
-- Add documentation to your endpoints
-- Synchronize through all your devices
+- Organize requests using folders
+- Synchronize across multiple devices
+- Export collections in JSON
 
 .link https://www.getpostman.com/docs/collections
 
 .image ./introducing-postman/mac-app.jpg 300 _
 
-* Environnements
+* Environments
+
+- Information shared across multiple collections
+- Synchronize through multiple devices
+- Export environments in JSON
+
+.link https://www.getpostman.com/docs/environments
+
+.image ./introducing-postman/environments.png 300 _
 
 * Collaborate with Postman Cloud
 
@@ -58,31 +67,35 @@ Not fully an open source project but the the community is very implicated
 
 .image ./introducing-postman/postman-cloud.jpg 300 _
 
-* Automate your tests
+* Write automated tests
 
-* Write our first test
+- Make assertions on API responses
+- Use integrated libraries (Lodash, SugarJS, CryptoJS, etc...)
+- Use data files to set up multiple iterations
+- Define custom workflows
 
-* Integrated libraries
+.link https://www.getpostman.com/docs/writing_tests
 
-* Data files
-
-* Custom workflows
+.image ./introducing-postman/run-tests.jpg 270 _
 
 * Postman loves your CI
 
 - Newman allows to run your tests from the command line
-- Newman is open source
+- Newman is an open source project
 
 .link https://github.com/postmanlabs/newman Checkout newman on Github
 
 .image ./introducing-postman/postman-loves-jenkins.png
-
 
 * Want to generate a beautiful documentation for your API?
 
 .link https://github.com/aubm/postmanerator Meet Postmanerator
 
 .image ./introducing-postman/terminator.jpg 400 _
+
+* Demo!
+
+.link https://github.com/aubm/Books-API
 
 * Resources
 
