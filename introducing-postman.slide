@@ -87,15 +87,15 @@ Not fully an open source project but the the community is very implicated
 
 .image ./introducing-postman/postman-loves-jenkins.png
 
+* Demo!
+
+.link https://github.com/aubm/Books-API
+
 * Want to generate a beautiful documentation for your API?
 
 .link https://github.com/aubm/postmanerator Meet Postmanerator
 
 .image ./introducing-postman/terminator.jpg 400 _
-
-* Demo!
-
-.link https://github.com/aubm/Books-API
 
 * Resources
 
