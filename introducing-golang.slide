@@ -156,68 +156,11 @@ Why do we want it?
 - Because we do need it
 - It will introduces some of the cool stuff of Go such as the stdlib, tools, concurrency, interfaces, tests, ...
 
-* Say hello to Go
+* A solution
 
-.code ./introducing-golang/code/hello.go
+.link https://github.com/aubm/github-aggregator
 
-- the command line tool "go fmt" automatically reformat the code properly so we don't need to think about it
-
-* Our first HTTP handler func
-
-.code ./introducing-golang/code/http_first-http-handler.go
-
-Any function that implements this API can be used as an handler for a HTTP request.
-
-Let's build and run it using the go command
-
-.code ./introducing-golang/code/http_go-run.sh
-
-* And here it runs
-
-.image ./introducing-golang/hello-go.jpg
-
-A production ready HTTP server.
-
-For n incoming requests, Go executes the handler in n independent goroutines that run concurrently.
-
-We will talk more about concurrency.
-
-* Build and deploy
-
-go build
-
-That is all there is!
-
-.link https://github.com/mitchellh/gox
-
-* Packages
-
-.code ./introducing-golang/code/packages_main.go
-
-.code ./introducing-golang/code/packages_api.go
-
-* Packages
-
-- Packages and their sub-packages are located under GOPATH/src which is the location for all Go projects
-- Exported members must have their name capitalized
-
-* Structures
-
-.code ./introducing-golang/code/structs_declare.go
-
-.code ./introducing-golang/code/structs_use.go
-
-- Lightweight classes that have no inheritance (ReposHandlers !== struct{})
-- No constructor
-- A method is basically is function attached to a type
-
-* Interfaces
-
-.code ./introducing-golang/code/interfaces_declare.go
-
-.code ./introducing-golang/code/interfaces_implement.go
-
-Interfaces are implicitly satisfied, this is very useful to merge code bases that have no types in common
+Feel free to read the detail for each commit as it contains detailed information and explanations about the code.
 
 * Where to Go next
 
